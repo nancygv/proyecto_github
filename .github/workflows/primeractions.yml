@@ -11,7 +11,7 @@ jobs:
             - name: Chequear repositorio
               uses: actions/checkout@v2
 
-            - name: Configurar Java JDK 8
+            - name: 'Configurar Java JDK ${{ vars.VERSION_JDK }}'
               uses: actions/setup-java@v1
               with:
                 java-version: '${{ vars.VERSION_JDK }}'
